@@ -1,0 +1,110 @@
+/* .companyHomeFlex{
+    display: flex;
+} */
+.companyHomeFlex{
+    background-color: black;
+}
+.companyHomeFlextitle{
+  
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: auto;
+    border-radius: 0px 0px 80px 80px;
+    /* background-color: red; */
+ 
+}
+.companyHomeFlextitle img{
+    width: 11%;
+}
+
+label{
+    color:rgb(252, 211, 218);
+
+}
+
+.companyHomeForm{
+    margin-bottom: 1rem;
+    /* background-color: aqua; */
+}
+.companyHome{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    width:100%;
+    margin: auto;
+    /* background-color: yellow; */
+    /* background-color: red; */
+  
+}
+.submit{
+    width: 100%;
+  margin-top: 20px;
+}
+
+.CompanyHomeAllItem{
+    display: flex;
+    justify-content: center;
+   display: grid;
+   grid-template-columns: repeat(5, 200px);
+   gap: 1rem;
+
+    background-color: black;
+
+}
+
+.showRestaurantFood .card .card-img-top {
+   object-fit:cover; 
+  
+}
+.CompanyHomeAllItem .btn{
+place-items:center;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+.foodPrice{
+    display: flex;
+    gap: 1rem;
+}
+
+
+@media (max-width: 1062px) {
+   .CompanyHomeAllItem{
+    grid-template-columns: repeat(3, 200px);
+   }
+  }
+  @media(max-width:964px){
+    .companyHomeFlextitle h1{
+        font-size: 1.3rem;
+    }
+  }
+@media (max-width: 646px) {
+   .CompanyHomeAllItem{
+    grid-template-columns: repeat(2, 200px);
+   }
+   .companyHomeForm{
+    width: 200px;
+   }
+  }
+  @media (max-width: 514px){
+    .companyHomeFlextitle{
+        width: 300px;
+    }
+  }
+  @media (max-width: 306px){
+    .companyHomeFlextitle{
+        width: 200px;
+    }
+  }
+  @media (max-width: 457px){
+    .CompanyHomeAllItem{
+        grid-template-columns: repeat(1, 200px);
+       }
+  }
