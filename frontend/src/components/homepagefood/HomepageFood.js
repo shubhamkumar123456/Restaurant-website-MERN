@@ -13,7 +13,7 @@ const HomepageFood = (props) => {
   // console.log(props.items._id)
   let addToCart = async (e) => {
     // setallItems(props.items)
-    const response = await fetch("http://localhost:8080/api/cart", {
+    const response = await fetch("https://restaurant-website-backend.vercel.app/api/cart", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

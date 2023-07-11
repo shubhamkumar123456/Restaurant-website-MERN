@@ -14,7 +14,7 @@ const Cart = () => {
   useEffect(() => {
     const userFunction = async () => {
       const response = await fetch(
-        "http://localhost:8080/api/customer/getone",
+        "https://restaurant-website-backend.vercel.app/api/customer/getone",
         {
           method: "POST",
           headers: {

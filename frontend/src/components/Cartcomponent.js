@@ -6,7 +6,7 @@ const Cartcomponent = (props) => {
 
   // const [total, settotal] = useState([]);
   const userFunction = async () => {
-    const response = await fetch("http://localhost:8080/api/foodItem/getone", {
+    const response = await fetch("https://restaurant-website-backend.vercel.app/api/foodItem/getone", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

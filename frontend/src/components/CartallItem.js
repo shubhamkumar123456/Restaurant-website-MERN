@@ -7,7 +7,7 @@ const CartallItem = (props) => {
      useEffect(()=>{
         let items=async()=>{
             const response1 = await fetch(
-                "http://localhost:8080/api/foodItem/getone",
+                "https://restaurant-website-backend.vercel.app/api/foodItem/getone",
                 {
                   method: "POST",
                   headers: {

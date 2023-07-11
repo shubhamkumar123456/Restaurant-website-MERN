@@ -10,7 +10,7 @@ const Home = () => {
 
   useEffect(()=>{
     const getAllRestaurant=async()=>{
-      const response = await fetch('http://localhost:8080/api/foodItem')
+      const response = await fetch('https://restaurant-website-backend.vercel.app/api/foodItem')
       let res=await response.json();
      
       setdata(res)

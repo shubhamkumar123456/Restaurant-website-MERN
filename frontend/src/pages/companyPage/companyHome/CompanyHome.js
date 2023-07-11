@@ -39,13 +39,13 @@ const CompanyHome = () => {
       newPost.img = fileName;
 
       try {
-        await axios.post("http://localhost:8080/api/upload", data);
+        await axios.post("https://restaurant-website-backend.vercel.app/api/upload", data);
       } catch (error) {
         console.log(error);
       }
     }
     try {
-      await axios.post("http://localhost:8080/api/foodItem", newPost);
+      await axios.post("https://restaurant-website-backend.vercel.app/api/foodItem", newPost);
       // console.log(newPost.img)
       window.location.reload();
     } catch (error) {
@@ -56,7 +56,7 @@ const CompanyHome = () => {
   useEffect(() => {
     const getItem = async () => {
       const response = await fetch(
-        "http://localhost:8080/api/foodItem/single",
+        "https://restaurant-website-backend.vercel.app/api/foodItem/single",
         {
           method: "POST",
           headers: {
@@ -79,7 +79,7 @@ const CompanyHome = () => {
    
   const deletefoodItem=async(element)=>{
     const response = await fetch(
-      "http://localhost:8080/api/foodItem",
+      "https://restaurant-website-backend.vercel.app/api/foodItem",
       {
         method: "DELETE",
         headers: {

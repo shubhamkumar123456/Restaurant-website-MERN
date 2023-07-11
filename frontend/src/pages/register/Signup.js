@@ -10,7 +10,7 @@ const Signup = () => {
     // e.preventDefault();
     e.preventDefault()
 
-    const response = await fetch('http://localhost:8080/api/customer', {
+    const response = await fetch('https://restaurant-website-backend.vercel.app/api/customer', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
